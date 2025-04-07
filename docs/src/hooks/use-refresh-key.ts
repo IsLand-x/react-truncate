@@ -7,7 +7,7 @@ export const useRefreshKey = (deps: unknown[]) => {
     requestAnimationFrame(() => {
       setRefreshKey(Date.now())
     })
-  }, [deps])
+  }, deps)
 
   return {
     refreshKey,
